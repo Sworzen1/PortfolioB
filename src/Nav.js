@@ -95,7 +95,8 @@ const useStyles = makeStyles({
   },
   liMedia: {
     display: "inline-block",
-    paddingRight: "10px"
+    paddingRight: "10px",
+    fontSize:25,
   },
   active: {
     borderRight:"3px dotted black"
@@ -188,10 +189,14 @@ const Nav = () => {
         <div className={classes.mediaMenu}>
           <ul className={classes.ulMedia}>
             <li className={classes.liMedia}>
+              <a href="https://pl-pl.facebook.com/b.sworzen" target="_blank" style={{textDecoration:"none",color:"black"}}>
               <ion-icon name="logo-facebook"></ion-icon>
-            </li>
-            <li className={classes.liMedia}>
+              </a>
+            </li> 
+            <li className={classes.liMedia}> 
+            <a href="https://www.instagram.com/sworzi97" target="_blank" style={{textDecoration:"none",color:"black"}}>
               <ion-icon name="logo-instagram"></ion-icon>
+              </a>
             </li>
           </ul>
         </div>
