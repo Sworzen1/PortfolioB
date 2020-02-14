@@ -34,7 +34,8 @@ span: {
     left:200,
     "&:hover": {
         boxShadow:" 1px 10px 50px 10px #9a1441",
-        transition:"1s"
+        transition:"1s",
+        transform:"scale(0.95,0.95)"
     }
     
 },
