@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 const useStyles = makeStyles({
   nav: {
-    zIndex: 1,
+    zIndex: 3,
     position: "fixed",
     width: "100%",
     height: "60px",
