@@ -29,11 +29,11 @@ span: {
     position:"relative",
     height:"130%",
     width:"60%",
-    border:"8px solid #9a1441",
+    border:"8px solid #e65c00",
     top:-70,
     left:200,
     "&:hover": {
-        boxShadow:" 1px 10px 50px 10px #9a1441",
+        boxShadow:" 1px 10px 50px 10px #e65c00",
         transition:"1s",
         transform:"scale(0.95,0.95)"
     }
@@ -49,8 +49,8 @@ title:{
     top:80,
     color:"white",
     borderRadius:25,
-    borderTop:"8px solid #9a1441",
-    borderBottom:"8px solid #9a1441"
+    borderTop:"8px solid #e65c00",
+    borderBottom:"8px solid #e65c00"
 },
 text: {
 position:"relative",
