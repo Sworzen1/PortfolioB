@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   container: {
-    background: "linear-gradient(180deg, #0d1422 10%, #50021c 100%)",
+    background: "linear-gradient(180deg, #0d1422 10%, #340716 100%)",
     height: "100vh",
     gridTemplateColumns: "350px 350px 350px 150px",
     display: "grid"
@@ -34,7 +34,7 @@ const useStyles = makeStyles({
     display: "flex",
     width: "145px",
     height: "145px",
-    border: "3px solid black",
+    border: "5px solid black",
     transition: "0.5s",
   },
   frameHover: {
@@ -42,7 +42,7 @@ const useStyles = makeStyles({
     display: "flex",
     width: "145px",
     height: "145px",
-    border: "3px solid yellow",
+    border: "10px solid #e65c00",
     transform: "scale(0.89,0.89)",
     transition: "0.5s",
   },
@@ -56,7 +56,7 @@ const useStyles = makeStyles({
     transition: "0.5s",
   },
   iconaHover: {
-    color:"yellow",
+    color:"#e65c00",
     fontSize:"80px",
     top: "-40%",
     left: "50%",
@@ -71,6 +71,12 @@ const useStyles = makeStyles({
 const Block3 = () => {
   const classes = useStyles();
   const [hover, setHover] = useState(true);
+  const [hover1, setHover1] = useState(true)
+  const [hover2, setHover2] = useState(true)
+  const [hover3, setHover3] = useState(true)
+  const [hover4, setHover4] = useState(true)
+  const [hover5, setHover5] = useState(true)
+  const [hover6, setHover6] = useState(true)
 
   return (
     <div className={classes.container} id="section3">
@@ -98,17 +104,17 @@ const Block3 = () => {
       <div className={classes.box}>
         <div
           className={classes.iconBox}
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
+          onMouseLeave={() => setHover1(true)}
+          onMouseEnter={() => setHover1(false)}
         >
-            <p className={hover ? classes.icona : classes.iconaHover}>
+            <p className={hover1 ? classes.icona : classes.iconaHover}>
           <i class="fab fa-css3-alt" ></i>
           </p>
         </div>
         <span
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
-          className={hover ? classes.frame : classes.frameHover}
+          onMouseLeave={() => setHover1(true)}
+          onMouseEnter={() => setHover1(false)}
+          className={hover1 ? classes.frame : classes.frameHover}
         ></span>
       </div>
 
@@ -118,17 +124,17 @@ const Block3 = () => {
       <div className={classes.box}>
         <div
           className={classes.iconBox}
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
+          onMouseLeave={() => setHover2(true)}
+          onMouseEnter={() => setHover2(false)}
         >
-            <p className={hover ? classes.icona : classes.iconaHover}>
+            <p className={hover2 ? classes.icona : classes.iconaHover}>
           <i class="fab fa-js-square" ></i>
           </p>
         </div>
         <span
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
-          className={hover ? classes.frame : classes.frameHover}
+          onMouseLeave={() => setHover2(true)}
+          onMouseEnter={() => setHover2(false)}
+          className={hover2 ? classes.frame : classes.frameHover}
         ></span>
       </div>
 
@@ -137,17 +143,17 @@ const Block3 = () => {
       <div className={classes.box}>
         <div
           className={classes.iconBox}
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
+          onMouseLeave={() => setHover3(true)}
+          onMouseEnter={() => setHover3(false)}
         >
-            <p className={hover ? classes.icona : classes.iconaHover}>
+            <p className={hover3 ? classes.icona : classes.iconaHover}>
           <i class="fab fa-react" ></i>
           </p>
         </div>
         <span
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
-          className={hover ? classes.frame : classes.frameHover}
+          onMouseLeave={() => setHover3(true)}
+          onMouseEnter={() => setHover3(false)}
+          className={hover3 ? classes.frame : classes.frameHover}
         ></span>
       </div>
 
@@ -156,17 +162,17 @@ const Block3 = () => {
       <div className={classes.box}>
         <div
           className={classes.iconBox}
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
+          onMouseLeave={() => setHover4(true)}
+          onMouseEnter={() => setHover4(false)}
         >
-            <p className={hover ? classes.icona : classes.iconaHover}>
+            <p className={hover4 ? classes.icona : classes.iconaHover}>
           <i class="fab fa-java" ></i>
           </p>
         </div>
         <span
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
-          className={hover ? classes.frame : classes.frameHover}
+          onMouseLeave={() => setHover4(true)}
+          onMouseEnter={() => setHover4(false)}
+          className={hover4 ? classes.frame : classes.frameHover}
         ></span>
       </div>
 
@@ -175,17 +181,17 @@ const Block3 = () => {
         <div className={classes.box}>
         <div
           className={classes.iconBox}
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
+          onMouseLeave={() => setHover5(true)}
+          onMouseEnter={() => setHover5(false)}
         >
-            <p className={hover ? classes.icona : classes.iconaHover}>
+            <p className={hover5 ? classes.icona : classes.iconaHover}>
           <i class="fas fa-database" ></i>
           </p>
         </div>
         <span
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
-          className={hover ? classes.frame : classes.frameHover}
+          onMouseLeave={() => setHover5(true)}
+          onMouseEnter={() => setHover5(false)}
+          className={hover5 ? classes.frame : classes.frameHover}
         ></span>
       </div>
 
@@ -194,15 +200,15 @@ const Block3 = () => {
       <div className={classes.box}>
         <div
           className={classes.iconBox}
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
+          onMouseLeave={() => setHover6(true)}
+          onMouseEnter={() => setHover6(false)}
         >
           PS
         </div>
         <span
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
-          className={hover ? classes.frame : classes.frameHover}
+          onMouseLeave={() => setHover6(true)}
+          onMouseEnter={() => setHover6(false)}
+          className={hover6 ? classes.frame : classes.frameHover}
         ></span>
       </div>
     </div>
