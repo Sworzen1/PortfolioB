@@ -3,16 +3,16 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   container: {
-    background: "linear-gradient(180deg, #0d1422 10%, #340716 100%)",
+    background: "linear-gradient(180deg, #0d1422 10%, #070f20 100%)",
     height: "100vh",
-    gridTemplateColumns: "350px 350px 350px 150px",
-    display: "grid"
+    width:"100%"
+
   },
   box: {
     position: "relative",
     width: "181px",
     height: "181px",
- marginTop:150,
+ marginTop:140,
  marginLeft:90
   },
 
@@ -63,6 +63,22 @@ const useStyles = makeStyles({
     position: "relative",
     transform:"translate(-50%,0%)",
     transition: "0.5s",
+  },
+  allBoxes:{
+    position:"relative",
+    width:"100%",
+    height:"50vh",
+    gridTemplateColumns: "350px 350px 350px 10px",
+    display: "grid",
+    top:50
+  },
+  title:{
+    position:"relative",
+      color:"white",
+      letterSpacing: "4px",
+      padding:"30px",
+      fontWeight: 300,
+      marginTop:40,
   }
 
 
@@ -81,8 +97,12 @@ const Block3 = () => {
   return (
     <div className={classes.container} id="section3">
 
-        {/* HTML */}
 
+      <div className={classes.allBoxes}>
+    
+
+        {/* HTML */}
+    
       <div className={classes.box}>
         <div
           className={classes.iconBox}
@@ -137,7 +157,7 @@ const Block3 = () => {
           className={hover2 ? classes.frame : classes.frameHover}
         ></span>
       </div>
-
+      <h1 className={classes.title}>Technologies</h1>
         {/* REACT */}
 
       <div className={classes.box}>
@@ -211,6 +231,7 @@ const Block3 = () => {
           className={hover6 ? classes.frame : classes.frameHover}
         ></span>
       </div>
+    </div>
     </div>
   );
 };
