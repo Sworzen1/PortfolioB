@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import IconItem from "./IconItem"
 
 const useStyles = makeStyles({
   container: {
@@ -8,69 +9,12 @@ const useStyles = makeStyles({
     width:"100%"
 
   },
-  box: {
-    position: "relative",
-    width: "181px",
-    height: "181px",
- marginTop:140,
- marginLeft:90
-  },
-
-  iconBox: {
-    position: "absolute",
-    display: "flex",
-    width: "150px",
-    height: "150px",
-    backgroundColor: "#e6e6e6",
-    border:"1px solid black",
-    zIndex: 1,
-    top: 30,
-    left: 30,
-    cursor:"pointer"
-    
-  },
-  frame: {
-    position: "absolute",
-    display: "flex",
-    width: "145px",
-    height: "145px",
-    border: "5px solid black",
-    transition: "0.5s",
-  },
-  frameHover: {
-    position: "absolute",
-    display: "flex",
-    width: "145px",
-    height: "145px",
-    border: "10px solid #e65c00",
-    transform: "scale(0.89,0.89)",
-    transition: "0.5s",
-  },
-  icona:{
-    color:"black",
-    fontSize:"80px",
-    top: "-40%",
-    left: "50%",
-    position: "relative",
-    transform:"translate(-50%,0%)",
-    transition: "0.5s",
-  },
-  iconaHover: {
-    color:"#e65c00",
-    fontSize:"80px",
-    top: "-40%",
-    left: "50%",
-    position: "relative",
-    transform:"translate(-50%,0%)",
-    transition: "0.5s",
-  },
   allBoxes:{
     position:"relative",
     width:"100%",
     height:"50vh",
     gridTemplateColumns: "350px 350px 350px 10px",
     display: "grid",
-    top:50
   },
   title:{
     position:"relative",
@@ -78,158 +22,66 @@ const useStyles = makeStyles({
       letterSpacing: "4px",
       padding:"30px",
       fontWeight: 300,
-      marginTop:40,
   },
+  up : {
+    position:"relative",
+    display:"flex",
+    float:"right",
+    right:300,
+    top:80
+  }
 
 
 });
 
 const Block3 = () => {
   const classes = useStyles();
-  const [hover, setHover] = useState(true);
-  const [hover1, setHover1] = useState(true)
-  const [hover2, setHover2] = useState(true)
-  const [hover3, setHover3] = useState(true)
-  const [hover4, setHover4] = useState(true)
-  const [hover5, setHover5] = useState(true)
-  const [hover6, setHover6] = useState(true)
+
+  const IconList = [
+    {
+      icon:<i class="fab fa-html5" ></i>,
+      link:"https://pl.wikipedia.org/wiki/HTML"
+    },
+    {
+      icon:<i class="fab fa-css3-alt" ></i>,
+      link:"https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w"
+    },
+    {
+      icon:<i class="fab fa-js-square" ></i>,
+      link:"https://pl.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      icon:<i class="fab fa-react" ></i>,
+      link:"https://pl.wikipedia.org/wiki/React.js"
+    },
+    {
+      icon:<i class="fab fa-java" ></i>,
+      link:"https://pl.wikipedia.org/wiki/Java"
+    },
+    {
+      icon:<i class="fas fa-database" ></i>,
+      link:"https://pl.wikipedia.org/wiki/SQL"
+    },
+    {
+      icon:<i class="fab fa-adobe"></i>,
+      link:"https://pl.wikipedia.org/wiki/Adobe_Photoshop"
+    },
+  ]
 
   return (
     <div className={classes.container} id="section3">
-
+<div className={classes.up}>    <h1 className={classes.title}>Technologies</h1></div>
 
       <div className={classes.allBoxes}>
-    
-
-        {/* HTML */}
-    
-      <div className={classes.box}>
-      <a href="https://pl.wikipedia.org/wiki/HTML" target="_blank">
-        <div 
-          className={classes.iconBox}
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
-        >
-       <p className={hover ? classes.icona : classes.iconaHover}>
-        <i class="fab fa-html5" ></i></p>
-        </div></a>
-        <span
-          className={hover ? classes.frame : classes.frameHover}
-        ></span>
-      </div>
-
-        {/* CSS */}
-
-      <div className={classes.box}>
-      <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" target="_blank">
-        <div
-          className={classes.iconBox}
-          onMouseLeave={() => setHover1(true)}
-          onMouseEnter={() => setHover1(false)}
-        >
-            <p className={hover1 ? classes.icona : classes.iconaHover}>
-           <i class="fab fa-css3-alt" ></i>
-          </p>
-        </div>
-        </a>
-        <span
-          className={hover1 ? classes.frame : classes.frameHover}
-        ></span>
-      </div>
-
-        {/* JS */}
-
-
-      <div className={classes.box}>
-      <a href="https://pl.wikipedia.org/wiki/JavaScript" target="_blank" >
-        <div
-          className={classes.iconBox}
-          onMouseLeave={() => setHover2(true)}
-          onMouseEnter={() => setHover2(false)}
-        >
-            <p className={hover2 ? classes.icona : classes.iconaHover}>
-           <i class="fab fa-js-square" ></i>
-          </p>
-        </div>
-        </a>
-        <span
-          className={hover2 ? classes.frame : classes.frameHover}
-        ></span>
-      </div>
-      <h1 className={classes.title}>Technologies</h1>
-        {/* REACT */}
-
-      <div className={classes.box}>
-      <a href="https://pl.wikipedia.org/wiki/React.js" target="_blank" >
-        <div
-          className={classes.iconBox}
-          onMouseLeave={() => setHover3(true)}
-          onMouseEnter={() => setHover3(false)}
-        >
-            <p className={hover3 ? classes.icona : classes.iconaHover}>
-            <i class="fab fa-react" ></i> </p>
-        </div>
-        </a>
-         
-        <span
-          className={hover3 ? classes.frame : classes.frameHover}
-        ></span>
-      </div>
-
-        {/* JAVA */}
-
-      <div className={classes.box}>
-      <a href="https://pl.wikipedia.org/wiki/Java" target="_blank" >
-       <div
-          className={classes.iconBox}
-          onMouseLeave={() => setHover4(true)}
-          onMouseEnter={() => setHover4(false)}
-        >
-            <p className={hover4 ? classes.icona : classes.iconaHover}>
-           <i class="fab fa-java" ></i>
-          </p>
-        </div>
-        </a>
-        <span
-          className={hover4 ? classes.frame : classes.frameHover}
-        ></span>
-      </div>
-
-        {/* SQL */}
-
-        <div className={classes.box}>
-        <a href="https://pl.wikipedia.org/wiki/MySQL" target="_blank" >
-        <div
-          className={classes.iconBox}
-          onMouseLeave={() => setHover5(true)}
-          onMouseEnter={() => setHover5(false)}
-        >
-            <p className={hover5 ? classes.icona : classes.iconaHover}>
-            <i class="fas fa-database" ></i>
-          </p>
-        </div>
-        </a>
-        <span
-          className={hover5 ? classes.frame : classes.frameHover}
-        ></span>
-      </div>
-
-      {/* PHOTOSHOP */}
-
-      <div className={classes.box}>
-      <a href="https://pl.wikipedia.org/wiki/Adobe_Photoshop" target="_blank" >
-        <div
-          className={classes.iconBox}
-          onMouseLeave={() => setHover6(true)}
-          onMouseEnter={() => setHover6(false)}
-        >
-          PS
-        </div>
-        </a>
-        <span
-          className={hover6 ? classes.frame : classes.frameHover}
-        ></span>
-      </div>
+        {IconList.map(item =>{
+          return (
+              <IconItem
+              key={item.icon}
+              icon={item.icon}
+              link={item.link}
+              />
+          )
+        })}
     </div>
     </div>
   );
