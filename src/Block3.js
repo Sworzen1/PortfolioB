@@ -79,7 +79,7 @@ const useStyles = makeStyles({
       padding:"30px",
       fontWeight: 300,
       marginTop:40,
-  }
+  },
 
 
 });
@@ -104,17 +104,16 @@ const Block3 = () => {
         {/* HTML */}
     
       <div className={classes.box}>
-        <div
+      <a href="https://pl.wikipedia.org/wiki/HTML" target="_blank">
+        <div 
           className={classes.iconBox}
           onMouseLeave={() => setHover(true)}
           onMouseEnter={() => setHover(false)}
         >
-        <p className={hover ? classes.icona : classes.iconaHover}>
-          <i class="fab fa-html5" ></i></p>
-        </div>
+       <p className={hover ? classes.icona : classes.iconaHover}>
+        <i class="fab fa-html5" ></i></p>
+        </div></a>
         <span
-          onMouseLeave={() => setHover(true)}
-          onMouseEnter={() => setHover(false)}
           className={hover ? classes.frame : classes.frameHover}
         ></span>
       </div>
@@ -122,18 +121,18 @@ const Block3 = () => {
         {/* CSS */}
 
       <div className={classes.box}>
+      <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" target="_blank">
         <div
           className={classes.iconBox}
           onMouseLeave={() => setHover1(true)}
           onMouseEnter={() => setHover1(false)}
         >
             <p className={hover1 ? classes.icona : classes.iconaHover}>
-          <i class="fab fa-css3-alt" ></i>
+           <i class="fab fa-css3-alt" ></i>
           </p>
         </div>
+        </a>
         <span
-          onMouseLeave={() => setHover1(true)}
-          onMouseEnter={() => setHover1(false)}
           className={hover1 ? classes.frame : classes.frameHover}
         ></span>
       </div>
@@ -142,18 +141,18 @@ const Block3 = () => {
 
 
       <div className={classes.box}>
+      <a href="https://pl.wikipedia.org/wiki/JavaScript" target="_blank" >
         <div
           className={classes.iconBox}
           onMouseLeave={() => setHover2(true)}
           onMouseEnter={() => setHover2(false)}
         >
             <p className={hover2 ? classes.icona : classes.iconaHover}>
-          <i class="fab fa-js-square" ></i>
+           <i class="fab fa-js-square" ></i>
           </p>
         </div>
+        </a>
         <span
-          onMouseLeave={() => setHover2(true)}
-          onMouseEnter={() => setHover2(false)}
           className={hover2 ? classes.frame : classes.frameHover}
         ></span>
       </div>
@@ -161,18 +160,18 @@ const Block3 = () => {
         {/* REACT */}
 
       <div className={classes.box}>
+      <a href="https://pl.wikipedia.org/wiki/React.js" target="_blank" >
         <div
           className={classes.iconBox}
           onMouseLeave={() => setHover3(true)}
           onMouseEnter={() => setHover3(false)}
         >
             <p className={hover3 ? classes.icona : classes.iconaHover}>
-          <i class="fab fa-react" ></i>
-          </p>
+            <i class="fab fa-react" ></i> </p>
         </div>
+        </a>
+         
         <span
-          onMouseLeave={() => setHover3(true)}
-          onMouseEnter={() => setHover3(false)}
           className={hover3 ? classes.frame : classes.frameHover}
         ></span>
       </div>
@@ -180,18 +179,18 @@ const Block3 = () => {
         {/* JAVA */}
 
       <div className={classes.box}>
-        <div
+      <a href="https://pl.wikipedia.org/wiki/Java" target="_blank" >
+       <div
           className={classes.iconBox}
           onMouseLeave={() => setHover4(true)}
           onMouseEnter={() => setHover4(false)}
         >
             <p className={hover4 ? classes.icona : classes.iconaHover}>
-          <i class="fab fa-java" ></i>
+           <i class="fab fa-java" ></i>
           </p>
         </div>
+        </a>
         <span
-          onMouseLeave={() => setHover4(true)}
-          onMouseEnter={() => setHover4(false)}
           className={hover4 ? classes.frame : classes.frameHover}
         ></span>
       </div>
@@ -199,18 +198,18 @@ const Block3 = () => {
         {/* SQL */}
 
         <div className={classes.box}>
+        <a href="https://pl.wikipedia.org/wiki/MySQL" target="_blank" >
         <div
           className={classes.iconBox}
           onMouseLeave={() => setHover5(true)}
           onMouseEnter={() => setHover5(false)}
         >
             <p className={hover5 ? classes.icona : classes.iconaHover}>
-          <i class="fas fa-database" ></i>
+            <i class="fas fa-database" ></i>
           </p>
         </div>
+        </a>
         <span
-          onMouseLeave={() => setHover5(true)}
-          onMouseEnter={() => setHover5(false)}
           className={hover5 ? classes.frame : classes.frameHover}
         ></span>
       </div>
@@ -218,6 +217,7 @@ const Block3 = () => {
       {/* PHOTOSHOP */}
 
       <div className={classes.box}>
+      <a href="https://pl.wikipedia.org/wiki/Adobe_Photoshop" target="_blank" >
         <div
           className={classes.iconBox}
           onMouseLeave={() => setHover6(true)}
@@ -225,9 +225,8 @@ const Block3 = () => {
         >
           PS
         </div>
+        </a>
         <span
-          onMouseLeave={() => setHover6(true)}
-          onMouseEnter={() => setHover6(false)}
           className={hover6 ? classes.frame : classes.frameHover}
         ></span>
       </div>
