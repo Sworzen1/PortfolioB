@@ -6,7 +6,6 @@ import ProjectItem from "./ProjectItem"
 
 const useStyles = makeStyles({
     container:{
-        position:"absolute",
         background: "linear-gradient(180deg, #070f20 10%, #030914 100%)",
         height:"100vh",
         width:"100%"
@@ -20,8 +19,15 @@ const useStyles = makeStyles({
         letterSpacing: "4px",
         padding:"30px",
         fontWeight: 300,
-        marginTop:90
+        marginTop:90,
     },
+    up:{
+        position:"relative",
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+
+    }
     
 })
 
@@ -40,7 +46,7 @@ const Block4 = () => {
 
     return (
         <div className={classes.container} id="section4"> 
-        <div>
+        <div className={classes.up}>
             <h1 className={classes.title}>Projects</h1>
         </div>
         <div className={classes.projects}>
