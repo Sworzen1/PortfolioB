@@ -84,7 +84,15 @@ position:"relative",
       width:"80vw",
       fontSize:12,
 
-    }
+    },
+    "@media (min-width: 375px)":{
+        left:0,
+        top:20,
+        padding:"20px",
+        width:"80vw",
+        fontSize:12,
+  
+      }
 },
 
 img1: {

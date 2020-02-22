@@ -6,7 +6,11 @@ const useStyles = makeStyles({
   container: {
     background: "linear-gradient(180deg, #0d1422 10%, #070f20 100%)",
     height: "100vh",
-    width:"100%"
+    width:"100%",
+    "@media(min-width: 320px)":{
+      height: "110vh",
+
+    }
 
   },
   allBoxes:{
@@ -20,6 +24,13 @@ const useStyles = makeStyles({
       left:-20,
       width:"40vw",
       top:-100
+    },
+    "@media(min-width: 320px)":{
+      gridTemplateColumns:"auto auto",
+      left:-10,
+      width:"40vw",
+      top:-100
+
     }
   },
   title:{

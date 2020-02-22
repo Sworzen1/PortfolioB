@@ -16,6 +16,12 @@ const useStyles = makeStyles({
             top:0,
             height:150,
             width:150,
+        },
+        "@media(min-width: 375px)":{
+            left:"22%",
+            top:0,
+            height:200,
+            width:200,
         }
     },
     box1:{
@@ -34,6 +40,12 @@ const useStyles = makeStyles({
             top:0,
             height:150,
             width:150,
+        },
+        "@media(min-width: 375px)":{
+            left:"22%",
+            top:0,
+            height:200,
+            width:200,
         }
     },
     img:{
@@ -47,6 +59,11 @@ const useStyles = makeStyles({
             height:150,
             width:150,
             filter:"none",
+        },
+        "@media(min-width: 375px)":{
+            top:0,
+            height:200,
+            width:200,
         }
     },
         img1:{
@@ -59,6 +76,12 @@ const useStyles = makeStyles({
         "@media(min-width: 320px)":{
             height:150,
             width:150,
+            filter:"none",
+        },
+        "@media(min-width: 375px)":{
+            top:0,
+            height:200,
+            width:200,
             filter:"none",
         }
     },
