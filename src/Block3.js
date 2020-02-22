@@ -7,9 +7,11 @@ const useStyles = makeStyles({
     background: "linear-gradient(180deg, #0d1422 10%, #070f20 100%)",
     height: "100vh",
     width:"100%",
-    "@media(min-width: 320px)":{
+    "@media(min-width: 375px)":{
       height: "110vh",
-
+    },
+    "@media(min-width: 425px)":{
+      height: "130vh",
     }
 
   },

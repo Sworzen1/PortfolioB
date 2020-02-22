@@ -22,6 +22,12 @@ const useStyles = makeStyles({
             top:0,
             height:200,
             width:200,
+        },
+        "@media(min-width: 425px)":{
+            left:"26%",
+            top:0,
+            height:200,
+            width:200,
         }
     },
     box1:{
@@ -43,6 +49,12 @@ const useStyles = makeStyles({
         },
         "@media(min-width: 375px)":{
             left:"22%",
+            top:0,
+            height:200,
+            width:200,
+        },
+        "@media(min-width: 425px)":{
+            left:"26%",
             top:0,
             height:200,
             width:200,
