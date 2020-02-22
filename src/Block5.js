@@ -9,6 +9,7 @@ const useStyles = makeStyles({
         display:"flex",
         alignItems:"center",
         justifyContent:"center",
+
     },
     contact:{
         position:"relative",
@@ -16,18 +17,28 @@ const useStyles = makeStyles({
         height:"400px",
         width:"700px",
         borderRadius:30,
+        "@media(min-width: 320px)":{
+            height:"60%",
+            width:"80%"
+
+        }
     },
     title:{
         position:"relative",
         color:"white",
         letterSpacing: "4px",
         fontWeight: 300,
+        
     },
     ContactInformations:{
         position:"relative",
         display:"inline-block",
         top:40,
-        color:"white"
+        color:"white",
+        "@media(min-width: 320px)":{
+top:0
+
+        }
     }
 
 })
@@ -42,10 +53,10 @@ const Block5 = () =>{
                 </div>
                 <div className={classes.ContactInformations}>
                     <p>Bartłomiej Sworzeń</p>
-                   <p> E-mail: b.sworzen@gmail.com</p>
-                   <p>GitHub: www.github.com/Sworzen1 </p>
-                   <p>Facebook: www.facebook.com/b.sworzen</p>
-                   <p>Instagram: www.instagram.com/sworzi97</p>
+                   <p> E-mail:<br/>b.sworzen@gmail.com</p>
+                   <p>GitHub:  <br/>www.github.com/Sworzen1 </p>
+                   <p>Facebook: <br/> www.facebook.com/b.sworzen</p>
+                   <p>Instagram: <br/> www.instagram.com/sworzi97</p>
                    
                 </div>
             </div>

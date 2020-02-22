@@ -11,6 +11,12 @@ const useStyles = makeStyles({
         left:200,
         top:100,
         transition:"1s",
+        "@media(min-width: 320px)":{
+            left:"25%",
+            top:0,
+            height:150,
+            width:150,
+        }
     },
     box1:{
         border:"2px solid #e65c00",
@@ -23,6 +29,12 @@ const useStyles = makeStyles({
         transition:"1s",
         cursor:"pointer",
         boxShadow:" 5px 5px 30px 5px #e65c00",
+        "@media(min-width: 320px)":{
+            left:"25%",
+            top:0,
+            height:150,
+            width:150,
+        }
     },
     img:{
         position:"relative",
@@ -30,7 +42,12 @@ const useStyles = makeStyles({
         width:290,
         filter:"blur(4px) grayscale(1)",
         backgroundSize:"cover",
-        transition:"1s"
+        transition:"1s",
+        "@media(min-width: 320px)":{
+            height:150,
+            width:150,
+            filter:"none",
+        }
     },
         img1:{
         position:"relative",
@@ -38,7 +55,12 @@ const useStyles = makeStyles({
         width:290,
         filter:"blur(0px) grayscale(0)",
         backgroundSize:"cover",
-        transition:"1.5s"
+        transition:"1.5s",
+        "@media(min-width: 320px)":{
+            height:150,
+            width:150,
+            filter:"none",
+        }
     },
 })
 const ProjectItem = (props) => {

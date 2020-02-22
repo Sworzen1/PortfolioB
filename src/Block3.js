@@ -15,6 +15,12 @@ const useStyles = makeStyles({
     height:"50vh",
     gridTemplateColumns: "350px 350px 350px 10px",
     display: "grid",
+    "@media(min-width: 320px)":{
+      gridTemplateColumns:"auto auto",
+      left:-20,
+      width:"40vw",
+      top:-100
+    }
   },
   title:{
     position:"relative",
@@ -28,7 +34,12 @@ const useStyles = makeStyles({
     display:"flex",
     float:"right",
     right:300,
-    top:80
+    top:80,
+    "@media (min-width: 320px)":{
+      right:0,
+      float:"none",
+      top:-30
+    }
   }
 
 

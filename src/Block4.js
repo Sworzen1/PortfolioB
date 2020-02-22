@@ -8,11 +8,12 @@ const useStyles = makeStyles({
     container:{
         background: "linear-gradient(180deg, #070f20 10%, #030914 100%)",
         height:"100vh",
-        width:"100%"
+        width:"100%",
     },
     projects:{
         display:"grid",
-        gridTemplateColumns:"auto auto auto auto"
+        gridTemplateRows:"auto auto ",
+        gridRowGap:30
     },
     title:{
         color:"white",
@@ -20,6 +21,9 @@ const useStyles = makeStyles({
         padding:"30px",
         fontWeight: 300,
         marginTop:90,
+        "@media(min-width: 320px)":{
+            marginTop:0
+        }
     },
     up:{
         position:"relative",

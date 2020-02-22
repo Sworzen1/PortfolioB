@@ -12,7 +12,11 @@ const useStyles = makeStyles({
         left:25,
         top:80,
         padding:20,
-        opacity:0.6
+        opacity:0.6,
+            "@media (min-width: 320px)":{
+      width:"150px",
+      height:"80px"
+    }
         
     }
 })

@@ -11,7 +11,10 @@ const useStyles = makeStyles({
     width: "100%",
     height: "60px",
     borderBottom: "1px solid white",
-    color: "white"
+    color: "white",
+    "@media (min-width: 320px)":{
+      width:"100vw"
+    }
   },
 
   openMenu: {
@@ -31,6 +34,10 @@ const useStyles = makeStyles({
     borderRight: "1px solid rgba(0, 0, 0, 0.1)",
     left:"-30%",
     transition:"1.5s",
+        "@media (min-width: 320px)":{
+      width:"60vw",
+      left:"-60%"
+    }
   },
   menuOpen: {
     position: "fixed",
@@ -41,6 +48,10 @@ const useStyles = makeStyles({
     borderRight: "1px solid rgba(0, 0, 0, 0.1)",
     left:0,
     transition:"1.5s",
+    "@media(min-width: 320px)":{
+
+      width:"80%",
+  }
   },
   brand: {
     position: "absolute",
@@ -58,7 +69,10 @@ const useStyles = makeStyles({
     right: "1.4em",
     cursor: "pointer",
     width: "80",
-    height: "60px"
+    height: "60px",
+        "@media (min-width: 320px)":{
+      display:"none"
+    }
   },
   closeMenu: {
     position: "relative",
@@ -91,7 +105,11 @@ const useStyles = makeStyles({
   },
   ulMedia: {
     position: "relative",
-    top: "50%"
+    top: "50%",
+    "@media(min-width: 320px)":{
+
+      top:-60
+  }
   },
   liMedia: {
     display: "inline-block",
@@ -137,12 +155,14 @@ const Nav = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              onClick={SetMenu}
              >
               Home
             </Link>
           </li>
-          <li className={classes.liMenu}>
+          <li className={classes.liMenu} >
             <Link
+            onClick={SetMenu}
               activeClass={classes.active}
               to="section2"
               spy={true}
@@ -159,6 +179,7 @@ const Nav = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              onClick={SetMenu}
             >
               Technologies
             </Link>
@@ -170,6 +191,7 @@ const Nav = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              onClick={SetMenu}
             >
               Projects
             </Link>
@@ -181,6 +203,7 @@ const Nav = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              onClick={SetMenu}
             >
               Contact
             </Link>

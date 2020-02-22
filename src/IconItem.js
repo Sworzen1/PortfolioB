@@ -7,7 +7,13 @@ const useStyles = makeStyles({
         width: "181px",
         height: "181px",
      marginTop:90,
-     marginLeft:90
+     marginLeft:90,
+     "@media(min-width: 320px)":{
+      width: "80px",
+      height: "80px",
+      marginLeft:50,
+      marginTop:50,
+     }
       },
     
       iconBox: {
@@ -20,7 +26,11 @@ const useStyles = makeStyles({
         zIndex: 1,
         top: 30,
         left: 30,
-        cursor:"pointer"
+        cursor:"pointer",
+        "@media(min-width: 320px)":{
+          width: "80px",
+          height: "80px",
+         }
         
       },
       frame: {
@@ -30,6 +40,12 @@ const useStyles = makeStyles({
         height: "145px",
         border: "5px solid black",
         transition: "0.5s",
+        "@media(min-width: 320px)":{
+          width: "75px",
+          height: "75px",
+          left:10,
+          top:10
+         }
       },
       frameHover: {
         position: "absolute",
@@ -39,6 +55,13 @@ const useStyles = makeStyles({
         border: "10px solid #e65c00",
         transform: "scale(0.89,0.89)",
         transition: "0.5s",
+        "@media(min-width: 320px)":{
+          width: "85px",
+          height: "85px",
+          border: "5px solid black",
+          transform: "scale(1,1)",
+         }
+        
       },
       icona:{
         color:"black",
@@ -48,6 +71,11 @@ const useStyles = makeStyles({
         position: "relative",
         transform:"translate(-50%,0%)",
         transition: "0.5s",
+        "@media(min-width: 320px)":{
+          top: "-55%",
+          left: "50%",
+          fontSize:"50px",
+         }
       },
       iconaHover: {
         color:"#e65c00",
@@ -57,6 +85,12 @@ const useStyles = makeStyles({
         position: "relative",
         transform:"translate(-50%,0%)",
         transition: "0.5s",
+        "@media(min-width: 320px)":{
+          top: "-40%",
+          left: "50%",
+          fontSize:"50px",
+          color:"black"
+         }
     }
 
 })
