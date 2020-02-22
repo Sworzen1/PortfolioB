@@ -56,10 +56,12 @@ const useStyles = makeStyles({
         transform: "scale(0.89,0.89)",
         transition: "0.5s",
         "@media(min-width: 320px)":{
-          width: "85px",
-          height: "85px",
+          width: "75px",
+          height: "75px",
           border: "5px solid black",
           transform: "scale(1,1)",
+          left:10,
+          top:10
          }
         
       },
@@ -86,7 +88,7 @@ const useStyles = makeStyles({
         transform:"translate(-50%,0%)",
         transition: "0.5s",
         "@media(min-width: 320px)":{
-          top: "-40%",
+          top: "-55%",
           left: "50%",
           fontSize:"50px",
           color:"black"
