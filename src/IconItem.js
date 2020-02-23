@@ -21,6 +21,12 @@ const useStyles = makeStyles({
      "@media(min-width: 425px)":{
       width: "120px",
       height: "120px",
+     },
+     "@media(min-width: 768px)":{
+      width: "155px",
+      height: "155px",
+      marginLeft:70,
+      marginTop:70
      }
       },
     
@@ -46,6 +52,10 @@ const useStyles = makeStyles({
          "@media(min-width: 425px)":{
           width: "120px",
           height: "120px",
+         },
+         "@media(min-width: 768px)":{
+          width: "155px",
+          height: "155px",
          }
         
       },
@@ -69,6 +79,12 @@ const useStyles = makeStyles({
          "@media(min-width: 425px)":{
           width: "115px",
           height: "115px",
+         },
+         "@media(min-width: 768px)":{
+          width: "150px",
+          height: "150px",
+          left:0,
+          top:0
          }
       },
       frameHover: {
@@ -94,6 +110,12 @@ const useStyles = makeStyles({
          "@media(min-width: 425px)":{
           width: "115px",
           height: "115px",
+         },
+         "@media(min-width: 768px)":{
+          width: "150px",
+          height: "150px",
+          left:0,
+          top:0
          }
         
       },
@@ -115,6 +137,10 @@ const useStyles = makeStyles({
          },
          "@media(min-width: 425px)":{
           fontSize:"75px",
+         },
+         "@media(min-width: 768px)":{
+          fontSize:"80px",
+          top: "-40%",
          }
       },
       iconaHover: {
@@ -136,6 +162,9 @@ const useStyles = makeStyles({
          },
          "@media(min-width: 425px)":{
           fontSize:"75px",
+         },
+         "@media(min-width: 768px)":{
+          fontSize:"80px",
          }
     }
 

@@ -37,7 +37,8 @@ const useStyles = makeStyles({
         "@media (min-width: 320px)":{
       width:"60vw",
       left:"-60%"
-    }
+    },
+
   },
   menuOpen: {
     position: "fixed",
@@ -51,6 +52,9 @@ const useStyles = makeStyles({
     "@media(min-width: 320px)":{
 
       width:"80%",
+  },
+  "@media (min-width: 768px)":{
+    width:"40%"
   }
   },
   brand: {
@@ -72,6 +76,9 @@ const useStyles = makeStyles({
     height: "60px",
         "@media (min-width: 320px)":{
       display:"none"
+    } ,
+           "@media (min-width: 768px)":{
+      display:"flex"
     }
   },
   closeMenu: {
@@ -156,6 +163,7 @@ const Nav = () => {
               smooth={true}
               duration={1000}
               onClick={SetMenu}
+              offset={-60}
              >
               Home
             </Link>
@@ -168,6 +176,7 @@ const Nav = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              offset={-60}
             >
               AboutMe
             </Link>
@@ -179,6 +188,7 @@ const Nav = () => {
               spy={true}
               smooth={true}
               duration={1000}
+              offset={-60}
               onClick={SetMenu}
             >
               Technologies
@@ -192,6 +202,7 @@ const Nav = () => {
               smooth={true}
               duration={1000}
               onClick={SetMenu}
+              offset={-60}
             >
               Projects
             </Link>

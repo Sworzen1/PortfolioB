@@ -13,7 +13,11 @@ const useStyles = makeStyles({
     projects:{
         display:"grid",
         gridTemplateRows:"auto auto ",
-        gridRowGap:30
+        gridRowGap:30,
+        "@media(min-width: 768px)":{
+            display:"grid",
+            gridTemplateColumns:"auto auto ",
+        }
     },
     title:{
         color:"white",
@@ -30,6 +34,9 @@ const useStyles = makeStyles({
         display:"flex",
         alignItems:"center",
         justifyContent:"center",
+        "@media(min-width: 768px)":{
+            top:10
+        }
 
     }
     

@@ -12,7 +12,11 @@ const useStyles = makeStyles({
     },
     "@media(min-width: 425px)":{
       height: "130vh",
+    },
+    "@media(min-width: 768px)":{
+ height:"140vh"
     }
+    
 
   },
   allBoxes:{
@@ -33,6 +37,11 @@ const useStyles = makeStyles({
       width:"40vw",
       top:-100
 
+    },
+    "@media(min-width: 768px)":{
+      gridTemplateColumns: "auto auto auto ",
+    display: "grid",
+    top:100
     }
   },
   title:{
@@ -52,6 +61,11 @@ const useStyles = makeStyles({
       right:0,
       float:"none",
       top:-30
+    },
+    "@media(min-width: 768px)":{
+    top:0,
+    float:"right",
+    right:100
     }
   }
 

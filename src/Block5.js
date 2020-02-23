@@ -21,6 +21,11 @@ const useStyles = makeStyles({
             height:"60%",
             width:"80%"
 
+        },
+        "@media(min-width: 768px)":{
+            height:"60%",
+            width:"60%"
+
         }
     },
     title:{
