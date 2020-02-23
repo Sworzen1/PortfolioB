@@ -55,6 +55,9 @@ const useStyles = makeStyles({
   },
   "@media (min-width: 768px)":{
     width:"40%"
+  },
+  "@media (min-width: 1024px)":{
+    width:"30%"
   }
   },
   brand: {

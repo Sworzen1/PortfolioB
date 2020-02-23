@@ -8,7 +8,14 @@ container:{
     display:"flex",
     height:"100vh",
     backgroundColor:"#0d1422",
+    "@media(min-width: 768px)":{
+    height:"80vh"
+    },
+    "@media(min-width: 1024px)":{
+        height:"100vh"
+        }
 },
+
 left:{
     position:"relative",
     height:"400px",
@@ -37,11 +44,16 @@ left:300,
       left:"-85%"
     },
     "@media (min-width: 768px)":{
-        top:190,
+        top:120,
         left:15,
-width:"400px",
-height:"250px",
-
+        width:"400px",
+        height:"250px",
+    },
+    "@media (min-width: 1024px)":{
+        top:190,
+        left:100,
+        width:"550px",
+        height:"300px",
     }
 },
 span: {
@@ -95,7 +107,16 @@ title:{
         width:"100px",
         fontSize:"15px",
         padding:"15px",
-        left:-60,
+        left:-70,
+        top:80,
+    },
+    "@media (min-width: 1024px)":{
+        display:"flex",
+        height:"70px",
+        width:"125px",
+        fontSize:"25px",
+        padding:"20px",
+        left:-100,
         top:80,
     }
 },
@@ -111,7 +132,6 @@ position:"relative",
       padding:"20px",
       width:"80vw",
       fontSize:12,
-
     },
     "@media (min-width: 375px)":{
         left:0,
@@ -119,7 +139,6 @@ position:"relative",
         padding:"20px",
         width:"80vw",
         fontSize:12,
-  
       },
       "@media (min-width: 768px)":{
        paddingRight:10,
@@ -127,9 +146,17 @@ position:"relative",
        width:"300px",
        left:-30,
        padding:0,
-       top:60
-       
-    }
+       top:60     
+    },
+    "@media (min-width: 1024px)":{
+        paddingRight:10,
+        height:"100%",
+        width:"300px",
+        left:-50,
+        padding:0,
+        top:60,
+        fontSize:14,    
+     }
 },
 
 img1: {
@@ -141,9 +168,15 @@ img1: {
     },
     "@media (min-width: 768px)":{
         position:"relative",
-        top:100,
+        top:30,
         height:300,
-    }
+    },
+    "@media (min-width: 1024px)":{
+        position:"relative",
+        top:80,
+        height:400,
+        left:50
+    },
 },
 sectionTitle: {
     color:"white",
@@ -158,13 +191,19 @@ sectionTitle: {
      width:"100vw",
      justifyContent:"center",
      alignItems:"center",
-
     },
     "@media (min-width: 768px)":{
         position:"relative",
         padding:0,
         left:-230,
-        top:80
+        top:10
+       },
+    "@media (min-width: 1024px)":{
+        position:"relative",
+        padding:0,
+        left:-310,
+        top:50
+        
        }
 
 }

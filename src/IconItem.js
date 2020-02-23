@@ -27,6 +27,12 @@ const useStyles = makeStyles({
       height: "155px",
       marginLeft:70,
       marginTop:70
+     },
+     "@media(min-width: 1024px)":{
+      width: "155px",
+      height: "155px",
+      marginLeft:70,
+      marginTop:50
      }
       },
     
@@ -81,8 +87,8 @@ const useStyles = makeStyles({
           height: "115px",
          },
          "@media(min-width: 768px)":{
-          width: "150px",
-          height: "150px",
+          width: "145px",
+          height: "145px",
           left:0,
           top:0
          }
@@ -106,17 +112,31 @@ const useStyles = makeStyles({
          "@media(min-width: 375px)":{
           width: "90px",
           height: "90px",
+          border: "5px solid black",
+          transform: "scale(1,1)",
          },
          "@media(min-width: 425px)":{
           width: "115px",
           height: "115px",
+          border: "5px solid black",
+          transform: "scale(1,1)",
          },
          "@media(min-width: 768px)":{
-          width: "150px",
-          height: "150px",
+          width: "145px",
+          height: "145px",
           left:0,
-          top:0
-         }
+          top:0,
+          border: "5px solid black",
+          transform: "scale(1,1)",
+         },
+         "@media(min-width: 768px)":{
+          width: "145px",
+          height: "145px",
+          left:0,
+          top:0,
+          border: "10px solid #e65c00",
+          transform: "scale(0.89,0.89)",
+         },
         
       },
       icona:{
@@ -165,7 +185,14 @@ const useStyles = makeStyles({
          },
          "@media(min-width: 768px)":{
           fontSize:"80px",
-         }
+          top: "-40%",
+         },
+         "@media(min-width: 1024px)":{
+          fontSize:"80px",
+          color:"#e65c00",
+          top: "-40%",
+         },
+
     }
 
 })

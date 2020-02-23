@@ -9,6 +9,15 @@ const useStyles = makeStyles({
         background: "linear-gradient(180deg, #070f20 10%, #030914 100%)",
         height:"100vh",
         width:"100%",
+        "@media(min-width: 320px)":{
+            height:"70vh"
+        },
+        "@media(min-width: 375px)":{
+            height:"80vh"
+        },
+        "@media(min-width: 425px)":{
+            height:"90vh"
+        }
     },
     projects:{
         display:"grid",
