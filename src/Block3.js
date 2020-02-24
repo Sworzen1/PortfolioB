@@ -50,6 +50,13 @@ const useStyles = makeStyles({
       gridTemplateColumns: "auto auto auto auto",
     display: "grid",
     top:100
+    },
+    "@media(min-width: 1440px)":{
+      width:"100%",
+      height:"50vh",
+      gridTemplateColumns: "350px 350px 350px 10px",
+      display: "grid",
+      top:-20
     }
   },
   title:{

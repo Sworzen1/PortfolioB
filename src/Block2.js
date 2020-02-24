@@ -13,7 +13,10 @@ container:{
     },
     "@media(min-width: 1024px)":{
         height:"100vh"
-        }
+        },
+        "@media(min-width: 1440px)":{
+            height:"100vh"
+            }
 },
 
 left:{
@@ -27,7 +30,12 @@ left:{
     "@media (min-width: 768px)":{
         width:"300px",
         height:"100%",
-       }
+       },
+       "@media (min-width: 1440px)":{
+left:150,
+height:"400px"
+       },
+
 },
 right:{
     position:"relative",
@@ -54,6 +62,13 @@ left:300,
         left:100,
         width:"550px",
         height:"300px",
+    },
+    "@media (min-width: 1440px)":{
+        height:"400px",
+        width:"700px",
+        top:195,
+        left:280,
+        
     }
 },
 span: {
@@ -83,6 +98,13 @@ span: {
         float:"right",
         top:-50,
         left:-50,
+    },
+    "@media (min-width: 1440px)":{
+        height:"130%",
+        width:"60%",
+        top:-70,
+        
+
     }
     
 },
@@ -118,6 +140,14 @@ title:{
         padding:"20px",
         left:-100,
         top:80,
+    },
+    "@media (min-width: 1440px)":{
+        left:-120,
+        top:80,
+        padding:"30px",
+        fontSize:"2em",
+        height:"90px",
+        width:"150px",
     }
 },
 text: {
@@ -156,6 +186,10 @@ position:"relative",
         padding:0,
         top:60,
         fontSize:14,    
+     },
+     "@media (min-width: 1440px)":{
+        fontSize:17,   
+        top:120, 
      }
 },
 
@@ -176,6 +210,11 @@ img1: {
         top:80,
         height:400,
         left:50
+    },
+    "@media (min-width: 1440px)":{
+        height:500,
+        top:-50,
+        left:-10
     },
 },
 sectionTitle: {
@@ -203,8 +242,14 @@ sectionTitle: {
         padding:0,
         left:-310,
         top:50
-        
+       },
+       "@media (min-width: 1440px)":{
+        padding:"30px",
+        marginTop:70,
+        left:-590,
+        top:-70
        }
+
 
 }
 })

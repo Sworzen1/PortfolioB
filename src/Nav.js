@@ -32,11 +32,13 @@ const useStyles = makeStyles({
     height: "100vh",
     backgroundColor: "#fff",
     borderRight: "1px solid rgba(0, 0, 0, 0.1)",
-    left:"-30%",
+    left:"-100%",
     transition:"1.5s",
         "@media (min-width: 320px)":{
-      width:"60vw",
-      left:"-60%"
+      left:"-100%"
+    },
+    "@media (min-width: 768px)":{
+      left:"-100%"
     },
 
   },

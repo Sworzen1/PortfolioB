@@ -17,7 +17,6 @@ container: {
     backgroundRepeat:"no-repeat",
     backgroundSize:"cover", 
         "@media (min-width: 320px)":{
-      width:"100vw",
       backgroundPosition:"center"
     }
 },

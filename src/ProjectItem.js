@@ -40,7 +40,12 @@ const useStyles = makeStyles({
             top:50,
             height:290,
             width:290,
-        }
+        },
+        "@media(min-width: 1440px)":{
+            left:200,
+            top:100,
+        },
+
     },
     box1:{
         border:"2px solid #e65c00",
@@ -82,7 +87,12 @@ const useStyles = makeStyles({
             top:50,
             height:290,
             width:290,
-        }
+        },
+        "@media(min-width: 1440px)":{
+            left:200,
+            top:100,
+        },
+
     },
     img:{
         position:"relative",

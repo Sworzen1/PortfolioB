@@ -33,6 +33,12 @@ const useStyles = makeStyles({
       height: "155px",
       marginLeft:70,
       marginTop:50
+     },
+     "@media(min-width: 1440px)":{
+      width: "181px",
+      height: "181px",
+      marginTop:90,
+      marginLeft:90,
      }
       },
     

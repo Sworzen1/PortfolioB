@@ -20,12 +20,14 @@ const useStyles = makeStyles({
         "@media(min-width: 320px)":{
             height:"60%",
             width:"80%"
-
         },
         "@media(min-width: 768px)":{
             height:"60%",
             width:"60%"
-
+        },
+        "@media(min-width: 1440px)":{
+            height:"400px",
+            width:"700px",
         }
     },
     title:{
@@ -41,9 +43,11 @@ const useStyles = makeStyles({
         top:40,
         color:"white",
         "@media(min-width: 320px)":{
-top:0
-
-        }
+        top:0
+        },
+        "@media(min-width: 1440px)":{
+         fontSize:"17px"
+            },
     }
 
 })
