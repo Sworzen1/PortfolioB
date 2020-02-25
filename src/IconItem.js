@@ -4,39 +4,39 @@ import {makeStyles} from "@material-ui/core/styles"
 const useStyles = makeStyles({
     box: {
         position: "relative",
-        width: "181px",
-        height: "181px",
+        width: 181,
+        height: 181,
      marginTop:90,
      marginLeft:90,
      "@media(min-width: 320px)":{
-      width: "80px",
-      height: "80px",
+      width: 80,
+      height: 80,
       marginLeft:50,
       marginTop:50,
      },
      "@media(min-width: 375px)":{
-      width: "95px",
-      height: "95px",
+      width: 95,
+      height: 95,
      },
      "@media(min-width: 425px)":{
-      width: "120px",
-      height: "120px",
+      width: 120,
+      height: 120,
      },
      "@media(min-width: 768px)":{
-      width: "155px",
-      height: "155px",
+      width: 155,
+      height: 155,
       marginLeft:70,
       marginTop:70
      },
      "@media(min-width: 1024px)":{
-      width: "155px",
-      height: "155px",
+      width: 155,
+      height: 155,
       marginLeft:70,
       marginTop:50
      },
      "@media(min-width: 1440px)":{
-      width: "181px",
-      height: "181px",
+      width: 181,
+      height: 181,
       marginTop:90,
       marginLeft:90,
      }

@@ -22,18 +22,22 @@ container:{
 left:{
     position:"relative",
     height:"400px",
-    left:150,
+    left:"10%",
         "@media (min-width: 320px)":{
-     left:0,
-    top:20
+    top:20,
+    left:0
     },
     "@media (min-width: 768px)":{
         width:"300px",
         height:"100%",
+        left:"2%",
        },
+       "@media (min-width: 1024px)":{
+        left:"4%"
+    },
        "@media (min-width: 1440px)":{
-left:150,
-height:"400px"
+height:"400px",
+left:"10%",
        },
 
 },
@@ -53,21 +57,21 @@ left:300,
     },
     "@media (min-width: 768px)":{
         top:120,
-        left:15,
-        width:"400px",
-        height:"250px",
+        left:"2%",
+        height:"50%",
+        width:"50%",
     },
     "@media (min-width: 1024px)":{
         top:190,
-        left:100,
-        width:"550px",
-        height:"300px",
+        left:"12%",
+        height:"50%",
+        width:"50%",
     },
     "@media (min-width: 1440px)":{
-        height:"400px",
-        width:"700px",
+        height:"50%",
+        width:"50%",
         top:195,
-        left:280,
+        left:"19%",
         
     }
 },
@@ -96,13 +100,13 @@ span: {
         width:"60%",
         height:"130%",
         float:"right",
-        top:-50,
-        left:-50,
+        top:"-15%",
+        left:"-11%",
     },
     "@media (min-width: 1440px)":{
         height:"130%",
         width:"60%",
-        top:-70,
+        top:"-15%",
         
 
     }
@@ -176,7 +180,7 @@ position:"relative",
        width:"300px",
        left:-30,
        padding:0,
-       top:60     
+       top:"14%"     
     },
     "@media (min-width: 1024px)":{
         paddingRight:10,
@@ -189,7 +193,7 @@ position:"relative",
      },
      "@media (min-width: 1440px)":{
         fontSize:17,   
-        top:120, 
+        top:"20%", 
      }
 },
 
@@ -240,7 +244,7 @@ sectionTitle: {
     "@media (min-width: 1024px)":{
         position:"relative",
         padding:0,
-        left:-310,
+        left:"-100%",
         top:50
        },
        "@media (min-width: 1440px)":{

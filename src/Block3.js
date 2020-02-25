@@ -30,33 +30,27 @@ const useStyles = makeStyles({
     display: "grid",
     "@media(min-width: 320px)":{
       gridTemplateColumns:"auto auto",
-      left:-20,
-      width:"40vw",
-      top:-100
+      top:-100,
+      left:-40
     },
-    "@media(min-width: 320px)":{
-      gridTemplateColumns:"auto auto",
-      left:-10,
-      width:"40vw",
-      top:-100
-
+    "@media(min-width: 375px)":{
     },
     "@media(min-width: 768px)":{
       gridTemplateColumns: "auto auto auto ",
     display: "grid",
-    top:100
+    top:-20,
     },
     "@media(min-width: 1024px)":{
       gridTemplateColumns: "auto auto auto auto",
     display: "grid",
-    top:100
+    top:0
     },
     "@media(min-width: 1440px)":{
       width:"100%",
       height:"50vh",
-      gridTemplateColumns: "350px 350px 350px 10px",
+      gridTemplateColumns: "auto auto auto auto",
       display: "grid",
-      top:-20
+      top:-40
     }
   },
   title:{

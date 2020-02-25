@@ -32,7 +32,7 @@ const useStyles = makeStyles({
     height: "100vh",
     backgroundColor: "#fff",
     borderRight: "1px solid rgba(0, 0, 0, 0.1)",
-    left:"-100%",
+    left:"-70%",
     transition:"1.5s",
         "@media (min-width: 320px)":{
       left:"-100%"
